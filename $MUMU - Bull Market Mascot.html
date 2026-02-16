@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>$MUMU - Bull Market Mascot</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
-<link href="./$MUMU - Bull Market Mascot_files/css2" rel="stylesheet">
+<link href="./css2" rel="stylesheet">
 <style>
 :root {
   --green: #1DB954;
@@ -590,6 +590,60 @@ footer .disclaimer {
   line-height: 1.6;
 }
 
+/* ========== GALLERY ========== */
+.gallery-section {
+  text-align: center;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(29, 185, 84, 0.2);
+  transition: all 0.3s;
+  display: block;
+}
+.gallery-grid img:hover {
+  border-color: var(--green);
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(29, 185, 84, 0.25);
+}
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* ========== VIDEO ========== */
+.video-section {
+  text-align: center;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+.video-grid video {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid var(--green);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  background: #000;
+}
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========== SCROLL ANIMATIONS ========== */
 .reveal {
   opacity: 0;
@@ -655,12 +709,12 @@ footer .disclaimer {
 
 <!-- NAV -->
 <nav id="navbar" class="">
-  <a href="file:///D:/Bruce/Downloads/mumu-website.html#" class="nav-logo">$MU<span>MU</span></a>
+  <a href="#" class="nav-logo">$MU<span>MU</span></a>
   <div class="nav-links">
-    <a href="file:///D:/Bruce/Downloads/mumu-website.html#about">About</a>
-    <a href="file:///D:/Bruce/Downloads/mumu-website.html#contract">Contract</a>
-    <a href="file:///D:/Bruce/Downloads/mumu-website.html#buy">Buy</a>
-    <a href="file:///D:/Bruce/Downloads/mumu-website.html#community">Community</a>
+    <a href="#about">About</a>
+    <a href="#contract">Contract</a>
+    <a href="#buy">Buy</a>
+    <a href="#community">Community</a>
     <a href="https://app.uniswap.org/explore/tokens/ethereum/0x2f573070e6090b3264fe707e2c9f201716f123c7?inputCurrency=NATIVE" target="_blank" class="buy-btn">Buy $MUMU</a>
   </div>
   <div class="hamburger" onclick="toggleMenu()">
@@ -670,10 +724,10 @@ footer .disclaimer {
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="file:///D:/Bruce/Downloads/mumu-website.html#about" onclick="toggleMenu()">About</a>
-  <a href="file:///D:/Bruce/Downloads/mumu-website.html#contract" onclick="toggleMenu()">Contract</a>
-  <a href="file:///D:/Bruce/Downloads/mumu-website.html#buy" onclick="toggleMenu()">Buy</a>
-  <a href="file:///D:/Bruce/Downloads/mumu-website.html#community" onclick="toggleMenu()">Community</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#contract" onclick="toggleMenu()">Contract</a>
+  <a href="#buy" onclick="toggleMenu()">Buy</a>
+  <a href="#community" onclick="toggleMenu()">Community</a>
   <a href="https://app.uniswap.org/explore/tokens/ethereum/0x2f573070e6090b3264fe707e2c9f201716f123c7?inputCurrency=NATIVE" target="_blank" style="color: var(--green);">Buy $MUMU</a>
 </div>
 
@@ -698,7 +752,7 @@ footer .disclaimer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-mascot">
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2025-06-15_18-52-24-768x768.jpg" alt="MUMU the Bull">
+    <img src="./photo_2025-06-15_18-52-24-768x768 - Copy.jpg" alt="MUMU the Bull">
   </div>
   <h1>$MUMU</h1>
   <div class="tagline">Bull Market Mascot</div>
@@ -716,19 +770,35 @@ footer .disclaimer {
 <!-- IMAGE STRIP -->
 <div class="image-strip">
   <div class="image-strip-track" id="imageStrip">
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2025-10-16_15-58-49-300x300.jpg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/GdKfG-0WcAAScL2-300x290.jpeg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2024-11-14_05-02-18-300x300.jpg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/GdKb6-OW8AABW3J-300x300.jpeg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/GdKclzLWUAAdF2s-300x300.jpeg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2025-06-14_19-02-07-206x300.jpg" alt="Mumu Art">
+    <img src="./photo_2025-10-16_15-58-49-300x300.jpg" alt="Mumu Art">
+    <img src="./GdKfG-0WcAAScL2-300x290.jpeg" alt="Mumu Art">
+    <img src="./photo_2024-11-14_05-02-18-300x300.jpg" alt="Mumu Art">
+    <img src="./GdKb6-OW8AABW3J-300x300.jpeg" alt="Mumu Art">
+    <img src="./GdKclzLWUAAdF2s-300x300.jpeg" alt="Mumu Art">
+    <img src="./photo_2025-06-14_19-02-07-206x300.jpg" alt="Mumu Art">
+    <img src="./photo_2024-08-12_15-47-44.jpg" alt="Mumu Art">
+    <img src="./photo_2024-08-13_08-57-04.jpg" alt="Mumu Art">
+    <img src="./photo_2024-08-13_16-10-57.jpg" alt="Mumu Art">
+    <img src="./photo_2024-11-07_02-56-15.jpg" alt="Mumu Art">
+    <img src="./GcbQX1aWIAA94ZW.jpeg" alt="Mumu Art">
+    <img src="./mumulogo.jpg" alt="Mumu Art">
+    <img src="./photo_2024-12-21_17-12-30.jpg" alt="Mumu Art">
+    <img src="./photo_2025-09-30_04-11-09.jpg" alt="Mumu Art">
     <!-- Duplicate for seamless loop -->
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2025-10-16_15-58-49-300x300.jpg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/GdKfG-0WcAAScL2-300x290.jpeg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2024-11-14_05-02-18-300x300.jpg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/GdKb6-OW8AABW3J-300x300.jpeg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/GdKclzLWUAAdF2s-300x300.jpeg" alt="Mumu Art">
-    <img src="./$MUMU - Bull Market Mascot_files/photo_2025-06-14_19-02-07-206x300.jpg" alt="Mumu Art">
+    <img src="./photo_2025-10-16_15-58-49-300x300.jpg" alt="Mumu Art">
+    <img src="./GdKfG-0WcAAScL2-300x290.jpeg" alt="Mumu Art">
+    <img src="./photo_2024-11-14_05-02-18-300x300.jpg" alt="Mumu Art">
+    <img src="./GdKb6-OW8AABW3J-300x300.jpeg" alt="Mumu Art">
+    <img src="./GdKclzLWUAAdF2s-300x300.jpeg" alt="Mumu Art">
+    <img src="./photo_2025-06-14_19-02-07-206x300.jpg" alt="Mumu Art">
+    <img src="./photo_2024-08-12_15-47-44.jpg" alt="Mumu Art">
+    <img src="./photo_2024-08-13_08-57-04.jpg" alt="Mumu Art">
+    <img src="./photo_2024-08-13_16-10-57.jpg" alt="Mumu Art">
+    <img src="./photo_2024-11-07_02-56-15.jpg" alt="Mumu Art">
+    <img src="./GcbQX1aWIAA94ZW.jpeg" alt="Mumu Art">
+    <img src="./mumulogo.jpg" alt="Mumu Art">
+    <img src="./photo_2024-12-21_17-12-30.jpg" alt="Mumu Art">
+    <img src="./photo_2025-09-30_04-11-09.jpg" alt="Mumu Art">
   </div>
 </div>
 
@@ -772,9 +842,53 @@ footer .disclaimer {
       </p>
     </div>
     <div class="about-image reveal visible">
-      <img src="./$MUMU - Bull Market Mascot_files/photo_2025-10-03_03-59-02-768x1024.jpg" alt="Mumu Community Art">
+      <img src="./photo_2025-10-03_03-59-02-768x1024.jpg" alt="Mumu Community Art">
       <div class="badge">Community Owned 💪</div>
     </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="reveal">
+    <span class="section-label">Community Art</span>
+    <div class="section-title">The Herd Gallery</div>
+  </div>
+  <div class="gallery-grid reveal">
+    <img src="./photo_2024-08-13_16-17-50.jpg" alt="Mumu Community">
+    <img src="./photo_2024-11-16_03-47-36.jpg" alt="Mumu Community">
+    <img src="./photo_2024-11-19_15-19-18.jpg" alt="Mumu Community">
+    <img src="./photo_2024-11-20_15-27-36.jpg" alt="Mumu Community">
+    <img src="./photo_2024-11-24_16-08-35.jpg" alt="Mumu Community">
+    <img src="./photo_2025-06-09_17-56-16.jpg" alt="Mumu Community">
+    <img src="./photo_2025-06-14_19-02-07.jpg" alt="Mumu Community">
+    <img src="./photo_2025-10-01_16-39-37.jpg" alt="Mumu Community">
+    <img src="./photo_2025-10-03_03-59-02.jpg" alt="Mumu Community">
+    <img src="./photo_2025-10-16_15-58-49.jpg" alt="Mumu Community">
+    <img src="./photo_2025-11-13_17-04-56 - Copy.jpg" alt="Mumu Community">
+    <img src="./photo_2026-01-14_14-12-02.jpg" alt="Mumu Community">
+    <img src="./photo_2026-01-17_14-43-30.jpg" alt="Mumu Community">
+    <img src="./photo_1_2026-02-16_14-17-12.jpg" alt="Mumu Community">
+    <img src="./photo_2_2026-02-16_14-17-12.jpg" alt="Mumu Community">
+    <img src="./photo_3_2026-02-16_14-17-12 - Copy.jpg" alt="Mumu Community">
+    <img src="./bull-new-hiRes.png" alt="Mumu Bull">
+    <img src="./bull-new Menu.png" alt="Mumu Bull Menu">
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section" id="videos">
+  <div class="reveal">
+    <span class="section-label">In Action</span>
+    <div class="section-title">MUMU Videos</div>
+  </div>
+  <div class="video-grid reveal">
+    <video controls playsinline preload="metadata">
+      <source src="./video_2024-11-24_16-52-14.mp4" type="video/mp4">
+    </video>
+    <video controls playsinline preload="metadata">
+      <source src="./video_2025-10-16_16-02-26.mp4" type="video/mp4">
+    </video>
   </div>
 </section>
 
